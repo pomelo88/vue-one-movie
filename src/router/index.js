@@ -9,8 +9,8 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: (resolve) => {
-        require.ensure(['../components/Hello.vue'], () => {
-          resolve(require('../components/Hello.vue'))
+        require.ensure(['../components/Released.vue'], () => {
+          resolve(require('../components/Released.vue'))
         })
       }
     },
